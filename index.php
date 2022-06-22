@@ -52,10 +52,17 @@ echo json_encode($list);*/
 
 //EX:06 alterando usuario UPDATE
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->update("Lebron", "2015");
 
+echo $usuario;*/
+
+//EX:07 excluindo dados
+
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->delete();
 echo $usuario;
 
 ?>
